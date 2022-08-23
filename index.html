@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>iOS 13 Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="keys--container">
+        <div class="calc-bar">
+          <div></div>
+          <i class="fa-solid fa-moon dark--mode"></i>
+        </div>
+        <div class="input-screen">
+          <input type="text" placeholder="0" id="input" disabled />
+          <input type="text" placeholder="0" class="input-input" disabled />
+          <!-- <div class="input-input"></div> -->
+        </div>
+        <table class="calcTable">
+          <tr>
+            <td>
+              <button type="button" class="keys erase" value="del">
+                &larr;
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys exp"
+                id="sin"
+                value="sin"
+              >
+                sin
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys exp"
+                id="cos"
+                value="cos"
+              >
+                cos
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys exp"
+                id="tan"
+                value="tan"
+              >
+                tan
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="keys clear" value="C">C</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="pow1">
+                x<sup>2</sup>
+              </button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="pow2">
+                x<sup>-1</sup>
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys brak operator operator1"
+                value="/"
+              >
+                /
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="button keys" value="7">7</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="8">8</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="9">9</button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys brak operator operator1"
+                value="*"
+              >
+                x
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="button keys" value="4">4</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="5">5</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="6">6</button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys brak operator operator1"
+                value="-"
+              >
+                -
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="button keys" value="1">1</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="2">2</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value="3">3</button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="button keys brak operator operator1"
+                value="+"
+              >
+                +
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><button type="button" class="operator" value="0">0</button></td> -->
+            <td>
+              <button type="button" class="button keys" value="0">0</button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra operator" value="%">
+                %
+              </button>
+            </td>
+            <td>
+              <button type="button" class="button keys bra" value=".">.</button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="keys brak operator operator1 equal-operator"
+                value="="
+              >
+                =
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/02c374cd64.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
